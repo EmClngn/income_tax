@@ -7,16 +7,19 @@
 
 # ask user's input for income
 income = int(input("What is your income?: "))
-print(income)
 # variable for tax income holding only 0
 tax_income = 0
 # use if statement to calculate the given tax using the given conditions
-if income <= 20000:
+if income <= 10000:
+    print("Your income tax is 0")
+elif income <= 20000:
     below_20k = (income - 10000) *.1
-    print(below_20k)
+    print("Your income tax is $",below_20k)
 elif income >= 20000:
-    below_20k = (income - 10000) *.1
-    above_20k = (income - 30000) *.2
+    below_20k = 10000 *.1
+    above_20k = (income - 20000) *.2
     sum = below_20k + above_20k
-    print(sum)
+    print("With your income of $",income,"you'll have to pay an income tax of $",sum)
+
+
     
