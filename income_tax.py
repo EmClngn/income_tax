@@ -6,5 +6,7 @@
 # Pseudo code
 
 # ask user's input for income
-
+income = int(input("What is your income?: "))
+print(income)
+# empty variable for tax income
 # use if statement to calculate the given tax using the given conditions
